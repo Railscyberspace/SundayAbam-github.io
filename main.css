@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* responsiveness for smaller devices */
+@media (min-width:560px){
+    #start-btn, #finish-btn, #next-btn{
+        width: 100px;
+    }
+}
+/* responsiveness for tablets */
+@media (min-width:768px){
+    #start-btn, #finish-btn, #next-btn{
+        width: 120px;
+    }
+}
+/* responsiveness for desktop */
+@media (min-width:992px){
+    .container{
+        width: 500px;
+    }
+    #start-btn, #finish-btn, #next-btn{
+        width: 150px;
+    }
+}
+
+body, html {
+    height: 100%;
+    background-color: gray;
+    background-size: cover;
+    /* font-family: 'Lobster', cursive; */
+    /* font-family: 'Lexend Giga', sans-serif; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* quiz game container */
+.container{
+    max-width: 80vw;
+    background-color: rgb(12, 10, 12);
+    border-radius: 10px;
+    padding: 3vh;
+    box-shadow: inset 1px 1px 7px 2px rgb(189, 146, 65);
+}
+
+.quiz{
+    font-size: 8vh;
+    color: whitesmoke;
+    text-align: center;
+    padding: 3vh 0;
+}
+/* instruction */
+.instruct{
+    padding-bottom: 1vh;
+}
+
+/* style for when game finishes */
+.question1{
+    font-size: 8vh;
+    padding-bottom: 1vh;
+    color:whitesmoke;
+    text-align: center;
+}
+.question{
+    font-size: 4vh;
+    color: rgb(241, 172, 43);
+    text-align: center;
+}
+
+/*quiz question style  */
+#question{
+    font-size: 4vh;
+    color: whitesmoke;
+    margin-bottom: 2vh;
+}
+
+#answer {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 15px;
+    margin-bottom: 3vh;
+}
+
+/* styling for the buttons */
+.btn{
+    padding: 2vh;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 1px rgb(168, 147, 75);
+    border: none;
+    font-size: 15px;
+    background-color: rgb(241, 172, 43);
+    font-family: 'Roboto', sans-serif;
+}
+.btn:hover{
+    box-shadow:0 2px 0 2px rgb(212, 209, 211);
+}
+.btn.correct{
+    background-color: rgb(73, 211, 73);
+    color: white;
+}
+.btn.correct, .btn.wrong:hover{
+    box-shadow: 0 2px 5px 1px rgb(168, 147, 75);
+}
+.btn.wrong{
+    background-color: rgb(250, 45, 45);
+    color: white;
+}
+
+#start-btn, #finish-btn, #next-btn{
+    font-size: 4vh;
+    padding: 1vh;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.start{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.finish, .next{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+/* hide unwanted elements at a time */
+.hide{
+    display: none;
+}
+
+/* score bar */
+p{
+    color: white;
+}

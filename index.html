@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend+Giga&family=Lobster&family=Roboto&family=Special+Elite&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Quiz Game</title>
+</head>
+
+<body>
+    <!-- quiz game container -->
+    <div class="container">
+        <div id="quiz" class="quiz">Quiz Game</div>
+        <div id="question-holder" class="hide">
+            <!-- quiz questions -->
+            <div id="question" class="question">Question</div>
+            <p class="instruct">Instruction: Click an option to proceed.</p>
+            <!-- options/answers -->
+            <div id="answer">
+                <button class=" btn ans-btn">a. Answer 1</button>
+                <button class=" btn ans-btn">b. Answer 2</button>
+                <button class=" btn ans-btn">c. Answer 3</button>
+                <button class=" btn ans-btn">d. Answer 4</button>
+            </div>
+        </div>
+        <!-- score bar -->
+        <p id="score" style="margin-top: 2vh;"></p>
+
+        <!-- function buttons (start, next and finish) -->
+        <div>
+            <div class="start">
+                <button id="start-btn" class="btn">Start</button>
+
+            </div>
+            <div class="finish">
+                <button id="finish-btn" class="btn hide">Finish</button>
+
+            </div>
+            <div class="next">
+                <button id="next-btn" class="btn hide">Next</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
